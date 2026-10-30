@@ -8,6 +8,10 @@
   --gray-border: #d9d9d9;
   --table-emphasis-background: #eceaea;
   --table-background: #fafafa;
+  --form-white: #ffffff;
+  --midnight-blue:#161678;
+  --midnight-blue-dark:#0b0b4f;
+
 }
 
 body {
@@ -80,7 +84,7 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-.books-list ol {
+.book-list ol {
   margin-top: 0.4rem;
 }
 
@@ -117,4 +121,76 @@ h2 {
 .table-footer {
   background-color: var(--table-emphasis-background);
   font-weight: bold;
+}
+
+/* Form Styles */
+
+.form-container{
+  margin: 100px auto;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 420px;
+  background-color: var(--form-white);
+}
+
+
+.color-bg-blue{
+  background-color: var(--midnight-blue-dark);
+}
+
+.main-heading-form{
+  text-align: center;
+  color: var(--midnight-blue);
+}
+
+.form-element{
+  margin-bottom: 0.5rem;
+}
+
+.form-label{
+  display: inline-block;
+  width: 48%;
+}
+
+.form-input{
+  display: inline-block;
+  width: 45%;
+  padding: 0.5rem;
+  border: 1px solid var(--gray-border);
+  border-radius: 6px;
+}
+
+.form-radios{
+  margin-left:40px;
+  margin-bottom:0.75rem;
+
+}
+
+.form-element:last-of-type{
+  margin: 2rem 0;
+}
+
+.btn{
+  display: inline-block;
+  width: 48%;
+  padding: 0.65rem 1rem;
+  border:0;
+  border-radius: 6px;
+}
+
+.btn-submit{
+  background-color: var(--midnight-blue);
+  color:var(--form-white);
+}
+
+.btn-submit:hover{
+  background-color: var(--midnight-blue-dark);
+}
+
+.form-note{
+  font-size: 0.8rem;
+}
+
+.form-note a{
+  color: var(--midnight-blue);
 }
