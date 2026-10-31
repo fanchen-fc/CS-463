@@ -22,6 +22,12 @@ body {
   line-height: 1.6;
 }
 
+fieldset{
+  border:0;
+  margin:0;
+  padding:0;
+}
+
 .nav {
   background-color: var(--dark-slate-infinity);
 }
