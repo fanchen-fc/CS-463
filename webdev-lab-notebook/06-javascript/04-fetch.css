@@ -1,3 +1,4 @@
+
 :root {
   --main-color: #121212;
   --main-light-color: #ffffff;
@@ -9,6 +10,77 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--main-color);
   background-color: var(--bg-color);
+  margin: 0;
 }
 
-/* Add your code here */
+.header {
+  background-color: var(--pokemon-yellow);
+  padding: 1rem;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.loading, .errorMessage {
+  color: var(--main-light-color);
+}
+
+.container {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.poke-list {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  justify-content: center;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pokemon-card {
+  background-color: var(--main-light-color);
+  width: 150px;
+  min-height: 175px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.pokemon-card:hover {
+  background-color: var(--pokemon-yellow);
+}
+
+.pokemon-card h2 {
+  font-size: 14px;
+  text-transform: lowercase;
+  margin: 0 0 10px;
+}
+
+.pokemon-card img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.pokemonType {
+  display: inline-block;
+  padding: 4px;
+  margin: 2px;
+  font-size: 10px;
+  color: var(--main-color);
+}
+
+.display-none {
+  display: none;
+}
+
+
